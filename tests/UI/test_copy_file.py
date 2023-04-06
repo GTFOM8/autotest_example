@@ -4,7 +4,6 @@ from src.application import Application
 def test_copy_file(app: Application, driver):
 
     # with allure.step('Открыть Яндекс.Диск'):
-    app.tab_homepage.go_to_yandex_disk(driver)
     app.tab_auth.input_login()
     app.tab_auth.click_input_button()
     app.tab_auth.input_password()
